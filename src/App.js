@@ -8,17 +8,22 @@ import Details from "./components/Details";
 import Default from "./components/Default";
 import Cart from "./components/Cart";
 import Modal from "./components/Modal";
+import Slider from "./components/Slider";
+import Footer from "./components/Footer";
+
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <Navbar />
+        <Slider />
         <Switch>
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
+        <Footer />
         <Modal />
       </React.Fragment>
     );

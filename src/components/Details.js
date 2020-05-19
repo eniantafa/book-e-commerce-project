@@ -9,7 +9,7 @@ export default class Details extends Component {
         {value => {
           const {
             id,
-            company,
+            author,
             img,
             info,
             price,
@@ -32,9 +32,9 @@ export default class Details extends Component {
                 </div>
                 {/* prdoduct info */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                  <h1>model : {title}</h1>
+                  <h1>Book Name : {title}</h1>
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-                    made by : <span className="text-uppercase">{company}</span>
+                    Author : <span className="text-uppercase">{author}</span>
                   </h4>
                   <h4 className="text-blue">
                     <strong>
@@ -43,13 +43,13 @@ export default class Details extends Component {
                     </strong>
                   </h4>
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                    some info about product :
+                    Some info about the book :
                   </p>
                   <p className="text-muted lead">{info}</p>
                   {/* buttons */}
                   <div>
                     <Link to="/">
-                      <ButtonContainer>back to products</ButtonContainer>
+                      <ButtonContainer>Back to Book List</ButtonContainer>
                     </Link>
                     <ButtonContainer
                       cart

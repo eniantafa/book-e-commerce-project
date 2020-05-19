@@ -1,5 +1,5 @@
 :root {
-  --mainBlue: #2a2a72;
+  --mainBlue: rgb(59, 59, 121);
   --lightBlue: #009ffd;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
@@ -13,7 +13,7 @@ body {
   color: var(--mainDark) !important;
 }
 .text-title {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
@@ -23,9 +23,21 @@ body {
 .text-bright {
   color: var(--lightBlue);
 }
+
+.navbar-brand {
+  display: none;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
 .navbar {
   justify-content: flex-start !important;
 }
+
+
 .btn-black {
   background: transparent;
   text-transform: capitalize;
